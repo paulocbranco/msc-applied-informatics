@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7455ff17-8b0a-4d34-9e8c-353a1f7fc2a6",
             "zIndex": -1,
+            "id": "7455ff17-8b0a-4d34-9e8c-353a1f7fc2a6",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Zone",
@@ -174,8 +174,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -272,17 +272,17 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "93c8deef-530f-48d0-ac94-be6e961341e1",
                   "title": "Weak password",
-                  "status": "Open",
-                  "severity": "Critical",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Spoofing",
                   "description": "Does not exist any strong password policy",
-                  "mitigation": "",
+                  "mitigation": "Implemented password policies",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -290,9 +290,16 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -316,6 +323,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -399,7 +407,6 @@
               ]
             },
             "id": "a5746ff8-7cb6-428f-b3a5-4d0fc1becce8",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Frontoffice \nweb server",
@@ -458,6 +465,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -541,7 +549,6 @@
               ]
             },
             "id": "abc7e06f-1728-4816-b799-cb38517f10b0",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Backoffice \nweb server",
@@ -581,6 +588,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -664,7 +672,6 @@
               ]
             },
             "id": "3b1aafb7-4090-4598-b515-3cc111e38a74",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Database",
