@@ -125,13 +125,20 @@
             "data": {
               "type": "tm.Actor",
               "name": "Aluno",
-              "description": "",
+              "description": "Acede à plataforma através de um browser para consultar notas,\ninscrever-se em unidades curriculares e verificar o seu plano de estudos. A autenticação é feita\ncom credenciais (utilizador e password).",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -242,7 +249,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Professor",
-              "description": "",
+              "description": "Acede à plataforma através de um browser para lançar\nnotas, gerir listas de alunos e comunicar com as turmas. A autenticação é feita com credenciais\n(utilizador e password).",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -359,7 +366,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Administrador",
-              "description": "",
+              "description": "Acede a um portal de administração separado para\ngerir utilizadores (alunos e professores), configurar unidades curriculares e gerar relatórios.\nO acesso é feito a partir da rede interna da universidade.",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -476,7 +483,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Frontend\nWeb",
-              "description": "",
+              "description": "A interface principal com que alunos e professores\ninteragem. Corre num servidor web (ex: Apache) e comunica com o Backend via uma API\nREST.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -596,7 +603,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Backend",
-              "description": "",
+              "description": "O servidor de lógica aplicacional que processa os pedidos do\nFrontend, interage com a base de dados e gere a lógica de negócio. Comunica com o Frontend\nvia HTTPS.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -719,7 +726,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Base de dados",
-              "description": "",
+              "description": "Um servidor MySQL que armazena toda a informação\ncrítica do sistema: dados de utilizadores (incluindo hashes de passwords), notas, inscrições e\ninformações sobre as unidades curriculares.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -840,7 +847,7 @@
             "data": {
               "type": "tm.Process",
               "name": "Servidor de\nRelatórios",
-              "description": "",
+              "description": "Um servidor interno que acede à Base de Dados para gerar relatórios\npara os administradores.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
