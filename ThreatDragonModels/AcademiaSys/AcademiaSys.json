@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "911afec1-5bc7-4a5d-a1a2-55aa8e34e671",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Aluno",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "13e4f171-e934-46c5-925a-6142065814bc",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Professor",
@@ -272,6 +272,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +356,6 @@
               ]
             },
             "id": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Administrador",
@@ -389,6 +389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +473,6 @@
               ]
             },
             "id": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Frontend\nWeb",
@@ -509,6 +509,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +593,6 @@
               ]
             },
             "id": "a5fd266f-49a7-40bd-b9eb-6b28c5999de9",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Backend",
@@ -632,6 +632,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -715,7 +716,6 @@
               ]
             },
             "id": "03ad5e80-74c9-4431-9873-e2f4e19a19da",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Base de dados",
@@ -753,6 +753,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -836,7 +837,6 @@
               ]
             },
             "id": "1d75c186-cff7-44c0-980a-9a5f17f8f4d4",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Servidor de\nRelatórios",
@@ -850,32 +850,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "31923220-ad0e-47c1-ad12-f5cb14350f05",
-            "source": {
-              "x": 150,
-              "y": -10
-            },
-            "target": {
-              "x": 510,
-              "y": 460
             }
           },
           {
@@ -1199,6 +1173,42 @@
               "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 11,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "31923220-ad0e-47c1-ad12-f5cb14350f05",
+            "source": {
+              "x": 150,
+              "y": -10
+            },
+            "target": {
+              "x": 430,
+              "y": 450
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 70
+              },
+              {
+                "x": 340,
+                "y": 350
+              }
+            ]
           }
         ],
         "description": "Diagrama STRIDE para AcademiaSys"
