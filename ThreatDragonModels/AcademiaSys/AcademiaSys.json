@@ -19,6 +19,90 @@
         "cells": [
           {
             "position": {
+              "x": 547.7499999999982,
+              "y": -19.99999999999727
+            },
+            "size": {
+              "width": 760,
+              "height": 430
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "3f609876-d302-4c65-a3ab-a135cb2f7072",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 587.75,
+              "y": 60.000000000000114
+            },
+            "size": {
+              "width": 140,
+              "height": 140
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "7e08514c-0bab-4b72-b7f0-0c08a3dbfb84",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 832,
+              "y": 59.99999999999966
+            },
+            "size": {
+              "width": 150,
+              "height": 140
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "2fce96f3-f611-4877-8337-d00b42947ceb",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1102,
+              "y": 60.000000000000114
+            },
+            "size": {
+              "width": 160,
+              "height": 140
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "6afb15b8-edcd-4bcf-9206-b7cb45fb480b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 60,
               "y": 100
             },
@@ -132,13 +216,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -260,8 +337,8 @@
           },
           {
             "position": {
-              "x": 611.75,
-              "y": 325
+              "x": 595.5,
+              "y": 515
             },
             "size": {
               "width": 112.5,
@@ -742,7 +819,7 @@
           {
             "position": {
               "x": 1130,
-              "y": 315
+              "y": 295
             },
             "size": {
               "width": 100,
@@ -1203,8 +1280,8 @@
               "y": -10
             },
             "target": {
-              "x": 430,
-              "y": 450
+              "x": 500,
+              "y": 570
             },
             "vertices": [
               {
@@ -1212,10 +1289,90 @@
                 "y": 70
               },
               {
-                "x": 340,
-                "y": 350
+                "x": 300,
+                "y": 410
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Diagrama STRIDE para AcademiaSys"
