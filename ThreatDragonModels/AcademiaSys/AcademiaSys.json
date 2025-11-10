@@ -20,16 +20,16 @@
           {
             "position": {
               "x": 547.7499999999982,
-              "y": -19.99999999999727
+              "y": -19.99999999999713
             },
             "size": {
               "width": 760,
-              "height": 430
+              "height": 440
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "3f609876-d302-4c65-a3ab-a135cb2f7072",
             "zIndex": -1,
+            "id": "3f609876-d302-4c65-a3ab-a135cb2f7072",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -49,8 +49,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "7e08514c-0bab-4b72-b7f0-0c08a3dbfb84",
             "zIndex": -1,
+            "id": "7e08514c-0bab-4b72-b7f0-0c08a3dbfb84",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -70,8 +70,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "2fce96f3-f611-4877-8337-d00b42947ceb",
             "zIndex": -1,
+            "id": "2fce96f3-f611-4877-8337-d00b42947ceb",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -91,7 +91,28 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "6afb15b8-edcd-4bcf-9206-b7cb45fb480b",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 1102,
+              "y": 273.0000000000001
+            },
+            "size": {
+              "width": 160,
+              "height": 130
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "0269dddf-71d3-4359-810e-fa574c3998d1",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
@@ -1283,18 +1304,43 @@
               "x": 500,
               "y": 570
             },
-            "vertices": [
-              {
-                "x": 240,
-                "y": 70
-              },
-              {
-                "x": 300,
-                "y": 410
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1372,7 +1418,17 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 70
+              },
+              {
+                "x": 300,
+                "y": 410
+              }
+            ]
           }
         ],
         "description": "Diagrama STRIDE para AcademiaSys"
