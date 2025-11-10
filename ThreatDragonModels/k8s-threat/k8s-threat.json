@@ -1,0 +1,311 @@
+{
+  "version": "2.0.0",
+  "summary": {
+    "title": "Kubernetes Cluster Threat Model",
+    "owner": "Paulo Branco",
+    "description": "DFD for a k8s cluster with webapp, backend, report services and MariaDB.",
+    "reviewer": "",
+    "created": "2025-11-10T00:09:00.072179Z",
+    "lastUpdated": "2025-11-10T00:09:00.072179Z",
+    "threats": []
+  },
+  "detail": {
+    "diagrams": [
+      {
+        "id": "k8s-dfd",
+        "title": "Kubernetes DFD: Webapp, Backend, Report, MariaDB",
+        "diagramType": "DFD",
+        "version": "2.0.0",
+        "cells": [
+          {
+            "type": "tm.Actor",
+            "id": "external-user",
+            "z": 1,
+            "position": {
+              "x": 60,
+              "y": 60
+            },
+            "size": {
+              "width": 100,
+              "height": 60
+            },
+            "name": "External User",
+            "description": "End user accessing the web application over the Internet.",
+            "attributes": {
+              "isTrustBoundary": false,
+              "privilegeLevel": "Public",
+              "providesAuthentication": false
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Boundary",
+            "id": "internet",
+            "z": 0,
+            "position": {
+              "x": 20,
+              "y": 20
+            },
+            "size": {
+              "width": 200,
+              "height": 160
+            },
+            "name": "Internet",
+            "description": "Untrusted network boundary.",
+            "attributes": {
+              "isTrustBoundary": true
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Boundary",
+            "id": "kubernetes-cluster",
+            "z": 0,
+            "position": {
+              "x": 260,
+              "y": 20
+            },
+            "size": {
+              "width": 640,
+              "height": 460
+            },
+            "name": "Kubernetes Cluster",
+            "description": "Trusted boundary: Kubernetes nodes, CNI, and services.",
+            "attributes": {
+              "isTrustBoundary": true
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Process",
+            "id": "ingress-controller",
+            "z": 2,
+            "position": {
+              "x": 300,
+              "y": 80
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "name": "Ingress Controller",
+            "description": "Terminates TLS and routes traffic to services.",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "privilegeLevel": "Service",
+              "storesCredentials": false
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Process",
+            "id": "webapp-service",
+            "z": 2,
+            "position": {
+              "x": 500,
+              "y": 80
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "name": "Webapp Service",
+            "description": "Frontend service (SPA/SSR) receiving user requests.",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "privilegeLevel": "Service",
+              "storesCredentials": false
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Process",
+            "id": "backend-service",
+            "z": 2,
+            "position": {
+              "x": 500,
+              "y": 220
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "name": "Backend Service",
+            "description": "API business logic and data access.",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "privilegeLevel": "Service",
+              "storesCredentials": false
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Process",
+            "id": "report-service",
+            "z": 2,
+            "position": {
+              "x": 700,
+              "y": 220
+            },
+            "size": {
+              "width": 140,
+              "height": 70
+            },
+            "name": "Report Service",
+            "description": "Generates reports; read-only DB access recommended.",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "privilegeLevel": "Service",
+              "storesCredentials": false
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Store",
+            "id": "mariadb",
+            "z": 2,
+            "position": {
+              "x": 620,
+              "y": 360
+            },
+            "size": {
+              "width": 160,
+              "height": 80
+            },
+            "name": "MariaDB",
+            "description": "Cluster-internal database (StatefulSet).",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "isPublicNetwork": false,
+              "storesCredentials": true,
+              "isShared": false,
+              "isSigned": false,
+              "isTamperProtected": true,
+              "privilegeLevel": "Database"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "user-to-ingress-(https)",
+            "z": 3,
+            "name": "User to Ingress (HTTPS)",
+            "description": "User requests to cluster via HTTPS",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": false,
+              "protocol": "HTTPS/TLS"
+            },
+            "source": {
+              "id": "external-user"
+            },
+            "target": {
+              "id": "ingress-controller"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "ingress-to-webapp-(http)",
+            "z": 3,
+            "name": "Ingress to Webapp (HTTP)",
+            "description": "Internal service-to-service; prefer mTLS",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "protocol": "HTTP or HTTP/mTLS"
+            },
+            "source": {
+              "id": "ingress-controller"
+            },
+            "target": {
+              "id": "webapp-service"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "webapp-to-backend-(http)",
+            "z": 3,
+            "name": "Webapp to Backend (HTTP)",
+            "description": "API calls; enforce auth (JWT/OIDC) and mTLS if possible",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "protocol": "HTTP/JSON + JWT"
+            },
+            "source": {
+              "id": "webapp-service"
+            },
+            "target": {
+              "id": "backend-service"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "backend-to-mariadb-(sql)",
+            "z": 3,
+            "name": "Backend to MariaDB (SQL)",
+            "description": "Application DB access; use TLS and least privilege",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "protocol": "MariaDB/MySQL over TLS"
+            },
+            "source": {
+              "id": "backend-service"
+            },
+            "target": {
+              "id": "mariadb"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "report-to-mariadb-(sql-ro)",
+            "z": 3,
+            "name": "Report to MariaDB (SQL-RO)",
+            "description": "Read-only queries for reporting; separate credentials",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "protocol": "MariaDB/MySQL over TLS"
+            },
+            "source": {
+              "id": "report-service"
+            },
+            "target": {
+              "id": "mariadb"
+            },
+            "threats": []
+          },
+          {
+            "type": "tm.Flow",
+            "id": "backend-to-report-(jobs/http)",
+            "z": 3,
+            "name": "Backend to Report (Jobs/HTTP)",
+            "description": "Trigger report generation via internal API or queue",
+            "attributes": {
+              "isEncrypted": true,
+              "isAuthenticated": true,
+              "protocol": "HTTP/gRPC or AMQP/Kafka"
+            },
+            "source": {
+              "id": "backend-service"
+            },
+            "target": {
+              "id": "report-service"
+            },
+            "threats": []
+          }
+        ]
+      }
+    ]
+  }
+}
