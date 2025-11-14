@@ -992,98 +992,6 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "8ab8e2c2-09ec-49b9-9db1-149f61898d0b",
-            "source": {
-              "cell": "a5fd266f-49a7-40bd-b9eb-6b28c5999de9",
-              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
-            },
-            "target": {
-              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-              "port": "251f1adc-1f24-4e65-811d-54007a38b508"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "192c4ec8-168f-4e93-997d-fd5fd6f5e46c",
-            "source": {
-              "cell": "03ad5e80-74c9-4431-9873-e2f4e19a19da",
-              "port": "5f609813-36bb-4f40-8323-556eb098e0eb"
-            },
-            "target": {
-              "cell": "a5fd266f-49a7-40bd-b9eb-6b28c5999de9",
-              "port": "251f1adc-1f24-4e65-811d-54007a38b508"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "1e2d0d7f-3714-496e-a5c6-4d5a2a19b5aa",
             "source": {
               "cell": "1d75c186-cff7-44c0-980a-9a5f17f8f4d4",
@@ -1092,144 +1000,6 @@
             "target": {
               "cell": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
               "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "acede",
-              "description": "Comunicação entre o browser do professor e a aplicação usando REST",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "acede"
-            ],
-            "id": "1b243ef1-c144-4806-adb0-93b6a0aebc2b",
-            "source": {
-              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
-            },
-            "target": {
-              "cell": "13e4f171-e934-46c5-925a-6142065814bc",
-              "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "acede",
-              "description": "Comunicação entre o browser do aluno e a aplicação usando REST",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "acede"
-            ],
-            "id": "89d95673-be6e-4170-a7e9-ec8649216f01",
-            "source": {
-              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
-            },
-            "target": {
-              "cell": "911afec1-5bc7-4a5d-a1a2-55aa8e34e671",
-              "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "acede",
-              "description": "Comunicação entre o browser do administrador e a aplicação usando REST",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "acede"
-            ],
-            "id": "e2b59f20-6837-4646-902f-b0c9042c41dd",
-            "source": {
-              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-              "port": "54017e39-03a9-4f27-a446-63bdd52eab26"
-            },
-            "target": {
-              "cell": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
-              "port": "6ed76346-863f-47fa-a7ee-1237a9b35186"
             },
             "vertices": []
           },
@@ -1276,6 +1046,236 @@
             "target": {
               "cell": "1d75c186-cff7-44c0-980a-9a5f17f8f4d4",
               "port": "591f34b6-c0e7-4432-a2eb-ad144febf1ce"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede/envia",
+              "description": "Comunicação entre o browser do administrador e a aplicação usando REST",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede/envia"
+            ],
+            "id": "e2b59f20-6837-4646-902f-b0c9042c41dd",
+            "source": {
+              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
+              "port": "54017e39-03a9-4f27-a446-63bdd52eab26"
+            },
+            "target": {
+              "cell": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
+              "port": "6ed76346-863f-47fa-a7ee-1237a9b35186"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede/envia",
+              "description": "Comunicação entre o serviço frontend e o serviço backend usando REST",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede/envia"
+            ],
+            "id": "8ab8e2c2-09ec-49b9-9db1-149f61898d0b",
+            "source": {
+              "cell": "a5fd266f-49a7-40bd-b9eb-6b28c5999de9",
+              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
+            },
+            "target": {
+              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
+              "port": "251f1adc-1f24-4e65-811d-54007a38b508"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede/envia",
+              "description": "Comunicação entre o serviço backend e a base de dados usando TCP",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede/envia"
+            ],
+            "id": "192c4ec8-168f-4e93-997d-fd5fd6f5e46c",
+            "source": {
+              "cell": "03ad5e80-74c9-4431-9873-e2f4e19a19da",
+              "port": "5f609813-36bb-4f40-8323-556eb098e0eb"
+            },
+            "target": {
+              "cell": "a5fd266f-49a7-40bd-b9eb-6b28c5999de9",
+              "port": "251f1adc-1f24-4e65-811d-54007a38b508"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede/envia",
+              "description": "Comunicação entre o browser do aluno e a aplicação usando REST",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede/envia"
+            ],
+            "id": "89d95673-be6e-4170-a7e9-ec8649216f01",
+            "source": {
+              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
+              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
+            },
+            "target": {
+              "cell": "911afec1-5bc7-4a5d-a1a2-55aa8e34e671",
+              "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede/envia",
+              "description": "Comunicação entre o browser do professor e a aplicação usando REST",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede/envia"
+            ],
+            "id": "1b243ef1-c144-4806-adb0-93b6a0aebc2b",
+            "source": {
+              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
+              "port": "98d46102-f490-47f4-9621-7d441e000cb0"
+            },
+            "target": {
+              "cell": "13e4f171-e934-46c5-925a-6142065814bc",
+              "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
             },
             "vertices": []
           },
