@@ -1084,52 +1084,6 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "e2b59f20-6837-4646-902f-b0c9042c41dd",
-            "source": {
-              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
-              "port": "54017e39-03a9-4f27-a446-63bdd52eab26"
-            },
-            "target": {
-              "cell": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
-              "port": "6ed76346-863f-47fa-a7ee-1237a9b35186"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "081d4733-31df-4060-adc0-539cbaa31953",
             "source": {
               "cell": "03ad5e80-74c9-4431-9873-e2f4e19a19da",
@@ -1276,6 +1230,52 @@
             "target": {
               "cell": "911afec1-5bc7-4a5d-a1a2-55aa8e34e671",
               "port": "6822386a-9f8e-43d5-95e4-73acecdcb85c"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "acede",
+              "description": "Comunicação entre o browser do administrador e a aplicação usando REST",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "acede"
+            ],
+            "id": "e2b59f20-6837-4646-902f-b0c9042c41dd",
+            "source": {
+              "cell": "9305a5b6-0f7d-40e1-8a75-ffb82635aa08",
+              "port": "54017e39-03a9-4f27-a446-63bdd52eab26"
+            },
+            "target": {
+              "cell": "bf164e0d-bcb8-426a-8ebd-4448dbd4c5db",
+              "port": "6ed76346-863f-47fa-a7ee-1237a9b35186"
             },
             "vertices": []
           },
