@@ -1,7 +1,7 @@
 {
   "version": "2.5.0",
   "summary": {
-    "title": "AcademiaSys Threat Model",
+    "title": "AcademiaSys",
     "owner": "",
     "description": "O sistema AcademiaSys é uma aplicação web que permite aos alunos, professores e administradores interagir com informações académicas.",
     "id": 0
